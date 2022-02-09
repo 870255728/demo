@@ -76,6 +76,20 @@
       "unicode_decimal": 59092
     },
     {
+      "icon_id": "7594051",
+      "name": "24gl-playCircle",
+      "font_class": "24gl-playCircle",
+      "unicode": "ea6e",
+      "unicode_decimal": 60014
+    },
+    {
+      "icon_id": "8075357",
+      "name": "左右键",
+      "font_class": "zuoyoujiancopy",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
       "icon_id": "8288837",
       "name": "放大镜",
       "font_class": "fangdajing",
@@ -88,6 +102,20 @@
       "font_class": "yijiuhuanxin",
       "unicode": "e604",
       "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "15747480",
+      "name": "左右键",
+      "font_class": "zuoyoujiancopy1",
+      "unicode": "e50a",
+      "unicode_decimal": 58634
+    },
+    {
+      "icon_id": "25468355",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
     }
   ]
 }
