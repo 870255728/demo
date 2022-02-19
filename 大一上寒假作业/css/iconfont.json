@@ -13,6 +13,13 @@
       "unicode_decimal": 58886
     },
     {
+      "icon_id": "673932",
+      "name": "YY_key",
+      "font_class": "yykey",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
       "icon_id": "765354",
       "name": "购物车",
       "font_class": "shouye",
@@ -74,6 +81,13 @@
       "font_class": "Sim-Card",
       "unicode": "e6d4",
       "unicode_decimal": 59092
+    },
+    {
+      "icon_id": "7567753",
+      "name": "24gl-paperPlane",
+      "font_class": "24gl-paperPlane",
+      "unicode": "e94b",
+      "unicode_decimal": 59723
     },
     {
       "icon_id": "7594051",

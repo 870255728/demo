@@ -31,7 +31,6 @@
 .top-right-font{
     float: right;
 }
-
 .top-right-font a {
     text-decoration: none;
     color: #b0b0b0;
@@ -39,7 +38,9 @@
     font-size: 5px;
     margin: 5px;
 }
-
+.top-right-font .active{
+    color: orange;
+}
 .top-right-font a:hover {
     color: white;
 }
@@ -391,6 +392,7 @@ li {
     width: 100%;
     height: 460px;
 background-color: #fff;
+
 }
 .hengfu-box{
     width: 1226px;
@@ -473,7 +475,7 @@ background-color: #fff;
 .adv{
     width: 100%;
     height: 170px;
-    margin: 15px 0 26px;
+    margin:0 auto;
     background-color: #fff;
 }
  .adv-left{
@@ -547,8 +549,14 @@ a{
 .container{
   width: 100%;
   background-color: #f5f5f5;
-  padding: 4px 0 12px;  
+  padding: 0 0 12px;  
   overflow: hidden;
+}
+.container .active{
+    display: block;
+}
+.container ol{
+    display:none;
 }
 .title{
     color: #333333;
@@ -902,7 +910,9 @@ a{
 .goods-container{
     height: 340px;
     width: 1226px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x: scroll;
+    display: flex;
     /* background-color: pink; */
 }
 .goods-item{
@@ -924,8 +934,7 @@ a{
 .goods-item img{
     width: 160px;
     height: 160px;
-    margin-left: 76px;
-    margin-top: 20px;
+margin: 25px 70px;
 }
 .text1{
     color: #b0b0b0;
@@ -943,7 +952,6 @@ a{
     position: absolute;
     width: 100px;
     height: 30px;
-    color: #fff;
     text-align: center;
     line-height: 30px;
     background-color: #ff6700;
@@ -951,9 +959,104 @@ a{
     border-radius: 5px;
     top: 0px;
     right: 10px;
+    float: right;
     display: none;
     transition: all .3s;
 }
 .goods-item:hover>.goods-add-cart{
     display: block;
+    color: #fff;
 }
+.denglu{
+    margin-top: 50px;
+}
+.denglu-body{
+    width: 358px;
+    height: 430.5px;
+    margin: 0 auto;
+    border: 1px solid #ebeef5;
+    background-color: #fff;
+    color: #303133;
+    transition: .3s;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.denglu-item{
+    height: 80.8px;
+    width: 318px;
+}
+.el-form-item__label{
+    text-align: right;
+    vertical-align: middle;
+    float: left;
+    font-size: 14px;
+    color: #606266;
+    line-height: 40px;
+    padding: 0 12px 0 0;
+    box-sizing: border-box;
+}
+.denglu-item input{
+    -webkit-appearance: none;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    font-size: inherit;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    padding: 0 15px;
+    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    width: 100%;
+}
+.check{
+    width: 318px;
+    height: 40px;
+    margin-top: 20px;
+}
+.bt1{
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    transition: .1s;
+    font-weight: 500;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.bt2{
+    color: #fff;
+    background-color: #409eff;
+    border-color: #409eff;
+}
+.anniu span{
+    color: white;
+}
+.denglu-body i{
+    font-size: 40px;
+}
+.fly{
+    padding-top: 20px;
+    margin-left: 20px;
+}
+.denglu h2,.denglu-item,.check,.anniu{
+    padding-left: 20px;
+}
+.denglu h2{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+

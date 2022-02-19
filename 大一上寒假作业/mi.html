@@ -8,11 +8,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="123.css">
+    <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </head>
-
+<style></style>
 
 <body>
+
     <div class="top-bar">
         <div class="center">
             <ul class="top-left-font">
@@ -27,7 +29,8 @@
                 <a href="#">问题反馈</a> <span>|</span>
                 <a href="#">Select Region</a>
             </ul>
-            <ul class="top-right-font">
+            <ul class="top-right-font" id=tabs>
+                <a href="#" class="active">主页</a> <span>|</span>
                 <a href="#">登陆</a> <span>|</span>
                 <a href="#">注册</a>
                 <a href="#">
@@ -39,6 +42,7 @@
             </ul>
         </div>
     </div>
+    <!-- 头部 -->
     <div class="daohanglan">
         <div class="center">
             <div class="daohanglan-left">
@@ -503,694 +507,730 @@
             </div>
         </div>
     </div>
-    <div class="hengfu">
-        <div class="center">
-            <div class="hengfu-box">
-                <div class="hengfu-right">
-                    <ul>
-                        <li><a herf="#">手机 电话卡<i>></i></a>
-                            <div class="hengfu-right-list">
-                                <ul>
-                                    <li><a href="#">
-                                            <img src="images/h1.jpg" alt="">
-                                            <span>Xiaomi 12 Pro</span>
-                                        </a></li>
-                                </ul>
+
+    <!-- 头部 -->
+    <!-- 内容 -->
+    <div id="lists" class="container">
+        <ol class="active">
+            <div class="hengfu">
+                <div class="center">
+                    <div class="hengfu-box">
+                        <div class="hengfu-right">
+                            <ul>
+                                <li><a herf="#">手机 电话卡<i>></i></a>
+                                    <div class="hengfu-right-list">
+                                        <ul>
+                                            <li><a href="#">
+                                                    <img src="images/h1.jpg" alt="">
+                                                    <span>Xiaomi 12 Pro</span>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a herf="#">笔记本 平板<i>></i></a></li>
+                                <li><a herf="#">电视 盒子<i>></i></a></li>
+                                <li><a herf="#">路由器 智能硬件<i>></i></a></li>
+                                <li><a herf="#">移动电源 电池 插线板<i>></i></a></li>
+                                <li><a herf="#">耳机 音响<i>></i></a></li>
+                                <li><a herf="#">保护套 贴膜<i>></i></a> </li>
+                                <li><a herf="#">线材 支架 储存卡<i>></i></a> </li>
+                                <li><a herf="#">箱包 服饰 鞋<i>></i></a> </li>
+                                <li><a herf="#">米兔 生活周边<i>></i></a> </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="adv">
+                <div class="center">
+                    <div class="adv-left">
+                        <ul>
+                            <li class="row col"><a href="#">
+                                    <i class="iconfont">&#xe604;</i>
+                                    <p>选购手机</p>
+                                </a></li>
+                            <li class="row col"><a href="#">
+                                    <i class="iconfont">&#xe617;</i>
+                                    <p>企业团购</p>
+                                </a></li>
+                            <li class="row"><a href="#">
+                                    <i class="iconfont">&#xe670;</i>
+                                    <p>一元活动</p>
+                                </a></li>
+                            <li class="col"><a href="#">
+                                    <i class="iconfont">&#xe6d4;</i>
+                                    <p>小米移动</p>
+                                </a></li>
+                            <li class="col"><a href="#">
+                                    <i class="iconfont">&#xe604;</i>
+                                    <p>以旧换新</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="iconfont">&#xe638;</i>
+                                    <p>话费充值</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="adv-img">
+                        <a href="#"><img src="images/ad1.jpg" alt=""></a>
+                    </div>
+                    <div class="adv-img">
+                        <a href="#"><img src="images/ad2.jpg" alt=""></a>
+                    </div>
+                    <div class="adv-img">
+                        <a href="#"><img src="images/ad3.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="star-goods">
+                    <h2 class="title">商品购物</h2>
+                    <div class="goods-container">
+                        <div class="goods-item">
+                            <a href="#" class="goods-add-cart">加入购物车</a>
+                            <a href="#">
+                                <img src="images/g1.jpg" alt="">
+                                <p>蔡老师的爸爸</p>
+                            </a>
+                            <p class="text1">菜</p>
+                            <p class="jiage1">299元</p>
+                        </div>
+                        <div class="goods-item">
+                            <a href="#" class="goods-add-cart">加入购物车</a>
+                            <a href="#">
+                                <img src="images/g1.jpg" alt="">
+                                <p>蔡老师的爸爸</p>
+                            </a>
+                            <p class="text1">菜</p>
+                            <p class="jiage1">299元</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="jiadian">
+                    <h2 class="title">家电</h2>
+                    <div class="home-box">
+                        <div class="home-box-left">
+                            <a href="#">
+                                <img src="images/jiadian1.jpg" alt=""></a>
+                        </div>
+                        <div class="home-box-right">
+                            <ul>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items2">
+                                    <a href="#">
+                                        <img src="images/jiadian5.jpg" alt="">
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="jiadian">
+                    <h2 class="title">智能</h2>
+                    <div class="home-box">
+
+                        <div class="home-box-left2">
+                            <li class="items">
+                                <a href="#">
+                                    <img src="images/zhineng1.jpg" alt="">
+
+                                </a>
+                            </li>
+                            <li class="items">
+                                <a href="#">
+                                    <img src="images/zhineng2.jpg" alt="">
+
+                                </a>
+                            </li>
+                        </div>
+                        <div class="home-box-right">
+                            <ul>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items2">
+                                    <a href="#">
+                                        <img src="images/jiadian5.jpg" alt="">
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="jiadian">
+                    <h2 class="title">搭配</h2>
+                    <div class="home-box">
+
+                        <div class="home-box-left2">
+                            <li class="items">
+                                <a href="#">
+                                    <img src="images/zhineng1.jpg" alt="">
+
+                                </a>
+                            </li>
+                            <li class="items">
+                                <a href="#">
+                                    <img src="images/zhineng2.jpg" alt="">
+
+                                </a>
+                            </li>
+                        </div>
+                        <div class="home-box-right">
+                            <ul>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items2">
+                                    <a href="#">
+                                        <img src="images/jiadian5.jpg" alt="">
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="jiadian">
+                    <h2 class="title">配件</h2>
+                    <div class="home-box">
+
+                        <div class="home-box-left2">
+                            <li class="items">
+                                <a href="#">
+                                    <img src="images/zhineng1.jpg" alt="">
+
+                                </a>
+                            </li>
+                            <li class="items">
+                                <a href="#">
+                                    <img src="images/zhineng2.jpg" alt="">
+
+                                </a>
+                            </li>
+                        </div>
+                        <div class="home-box-right">
+                            <ul>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items2">
+                                    <a href="#">
+                                        <img src="images/jiadian5.jpg" alt="">
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="jiadian">
+                    <h2 class="title">周边</h2>
+                    <div class="home-box">
+
+                        <div class="home-box-left2">
+                            <li class="items">
+                                <a href="#">
+                                    <img src="images/zhineng1.jpg" alt="">
+
+                                </a>
+                            </li>
+                            <li class="items">
+                                <a href="#">
+                                    <img src="images/zhineng2.jpg" alt="">
+
+                                </a>
+                            </li>
+                        </div>
+                        <div class="home-box-right">
+                            <ul>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items">
+                                    <a href="#">
+                                        <img src="images/jiadian2.jpg" alt="">
+                                        <p class="name2">小米电视4A 43英寸</p>
+                                        <p class="name3">2GB+8GB大存储，内置海量大片</p>
+                                        <p class="name4">2099元</p>
+                                    </a>
+                                </li>
+                                <li class="items2">
+                                    <a href="#">
+                                        <img src="images/jiadian5.jpg" alt="">
+
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="neirong">
+                    <h2 class="title">内容</h2>
+                    <div class="nierong-box">
+                        <div class="nierong-box-left">
+                            <div class="n1">图书</div>
+                            <div class="n2">哈利·波特与被诅咒的孩子</div>
+                            <div class="n3">"哈利·波特"第八个故事中文版震撼来袭！特别彩排版剧本！</div>
+                            <div class="n4">23.37元</div>
+                            <div class="n5">
+                                <a href="#">
+                                    <img src="images/neirong1.jpg" alt="">
+                                </a>
                             </div>
-                        </li>
-                        <li><a herf="#">笔记本 平板<i>></i></a></li>
-                        <li><a herf="#">电视 盒子<i>></i></a></li>
-                        <li><a herf="#">路由器 智能硬件<i>></i></a></li>
-                        <li><a herf="#">移动电源 电池 插线板<i>></i></a></li>
-                        <li><a herf="#">耳机 音响<i>></i></a></li>
-                        <li><a herf="#">保护套 贴膜<i>></i></a> </li>
-                        <li><a herf="#">线材 支架 储存卡<i>></i></a> </li>
-                        <li><a herf="#">箱包 服饰 鞋<i>></i></a> </li>
-                        <li><a herf="#">米兔 生活周边<i>></i></a> </li>
-                    </ul>
+                        </div>
+                        <div class="nierong-box-right">
+                            <div class="n1">图书</div>
+                            <div class="n2">哈利·波特与被诅咒的孩子</div>
+                            <div class="n3">"哈利·波特"第八个故事中文版震撼来袭！特别彩排版剧本！</div>
+                            <div class="n4">23.37元</div>
+                            <div class="n5">
+                                <a href="#">
+                                    <img src="images/neirong1.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nierong-box-right">
+                            <div class="n1">图书</div>
+                            <div class="n2">哈利·波特与被诅咒的孩子</div>
+                            <div class="n3">"哈利·波特"第八个故事中文版震撼来袭！特别彩排版剧本！</div>
+                            <div class="n4">23.37元</div>
+                            <div class="n5">
+                                <a href="#">
+                                    <img src="images/neirong1.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nierong-box-right">
+                            <div class="n1">图书</div>
+                            <div class="n2">哈利·波特与被诅咒的孩子</div>
+                            <div class="n3">"哈利·波特"第八个故事中文版震撼来袭！特别彩排版剧本！</div>
+                            <div class="n4">23.37元</div>
+                            <div class="n5">
+                                <a href="#">
+                                    <img src="images/neirong1.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <h2 class="title">视频</h2>
+                    <div class="video-box">
+                        <ul>
+                            <li class="video-items">
+                                <a herf="#">
+                                    <div class="video-img">
+                                        <img src="images/m1.jpg" alt="">
+                                        <div class="play">
+                                            <i class="iconfont">&#xe63a;</i>
+                                        </div>
+                                    </div>
+                                    <p class="n6">听雷总讲述小米7年工艺探索之路</p>
+                                    <p class="n7">小米6,7年工艺探索的巅峰之作</p>
+                                </a>
+                            </li>
+                            <li class="video-items">
+                                <a herf="#">
+                                    <div class="video-img">
+                                        <img src="images/m1.jpg" alt="">
+                                        <div class="play">
+                                            <i class="iconfont">&#xe63a;</i>
+                                        </div>
+                                    </div>
+                                    <p class="n6">听雷总讲述小米7年工艺探索之路</p>
+                                    <p class="n7">小米6,7年工艺探索的巅峰之作</p>
+                                </a>
+                            </li>
+                            <li class="video-items">
+                                <a herf="#">
+                                    <div class="video-img">
+                                        <img src="images/m1.jpg" alt="">
+                                        <div class="play">
+                                            <i class="iconfont">&#xe63a;</i>
+                                        </div>
+                                    </div>
+                                    <p class="n6">听雷总讲述小米7年工艺探索之路</p>
+                                    <p class="n7">小米6,7年工艺探索的巅峰之作</p>
+                                </a>
+                            </li>
+                            <li class="video-items">
+                                <a herf="#">
+                                    <div class="video-img">
+                                        <img src="images/m1.jpg" alt="">
+                                        <div class="play">
+                                            <i class="iconfont">&#xe63a;</i>
+                                        </div>
+                                    </div>
+                                    <p class="n6">听雷总讲述小米7年工艺探索之路</p>
+                                    <p class="n7">小米6,7年工艺探索的巅峰之作</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-        </div>
+        </ol>
+        <!-- 登陆 -->
+        <ol>
+            <div class="denglu">
+                <div class="center">
+                    <div class="denglu-body">
+                        <div class="fly">
+                            <i class="iconfont">&#xe94b;</i>
+                        </div>
+                        <h2>登陆</h2>
+                        <div class="denglu-item">
+                            <label class="el-form-item__label">用户名</label>
+                            <input type="text">
+                        </div>
+                        <div class="denglu-item">
+                            <label class="el-form-item__label">密码</label>
+                            <input type="text">
+                        </div>
+                        <div class="check">
+                            <input type="checkbox"><span>管理员登陆</span>
+                        </div>
+                        <div class="anniu">
+                            <button type="submit" class="bt1 bt2">
+                                <span>登陆</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ol>
+        <!-- 登陆 -->
+        <!-- 注册 -->
+        <ol>
+            <div class="denglu">
+                <div class="center">
+                    <div class="denglu-body">
+                        <div class="fly">
+                            <i class="iconfont">&#xe631;</i>
+                        </div>
+                        <h2>注册</h2>
+                        <div class="denglu-item">
+                            <label class="el-form-item__label">用户名</label>
+                            <input type="text">
+                        </div>
+                        <div class="denglu-item">
+                            <label class="el-form-item__label">密码</label>
+                            <input type="text">
+                        </div>
+                        <div class="denglu-item">
+                            <label class="el-form-item__label">昵称</label>
+                            <input type="text">
+                        </div>
+                        <br>
+                        <div class="anniu">
+                            <button id="register-button" type="submit" class="bt1 bt2">
+                                <span>注册</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ol>
+        <!-- 注册 -->
+        <!-- 购物车-假 -->
+        <ol>
+            <div class="denglu">
+                <div class="center">
+                    <div class="denglu-body">
+                        <div class="fly">
+                            <i class="iconfont">&#xe631;</i>
+                        </div>
+                        <h2>注册</h2>
+                        <div class="denglu-item">
+                            <label class="el-form-item__label">用户名</label>
+                            <input type="text">
+                        </div>
+                        <div class="denglu-item">
+                            <label class="el-form-item__label">密码</label>
+                            <input type="text">
+                        </div>
+                        <div class="denglu-item">
+                            <label class="el-form-item__label">昵称</label>
+                            <input type="text">
+                        </div>
+                        <br>
+                        <div class="anniu">
+                            <button type="submit" class="bt1 bt2">
+                                <span>注册</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ol>
+        <!-- 购物车-假 -->
     </div>
-    <div class="adv">
-        <div class="center">
-            <div class="adv-left">
-                <ul>
-                    <li class="row col"><a href="#">
-                            <i class="iconfont">&#xe604;</i>
-                            <p>选购手机</p>
-                        </a></li>
-                    <li class="row col"><a href="#">
-                            <i class="iconfont">&#xe617;</i>
-                            <p>企业团购</p>
-                        </a></li>
-                    <li class="row"><a href="#">
-                            <i class="iconfont">&#xe670;</i>
-                            <p>一元活动</p>
-                        </a></li>
-                    <li class="col"><a href="#">
-                            <i class="iconfont">&#xe6d4;</i>
-                            <p>小米移动</p>
-                        </a></li>
-                    <li class="col"><a href="#">
-                            <i class="iconfont">&#xe604;</i>
-                            <p>以旧换新</p>
-                        </a></li>
-                    <li><a href="#">
-                            <i class="iconfont">&#xe638;</i>
-                            <p>话费充值</p>
-                        </a></li>
-                </ul>
-            </div>
-            <div class="adv-img">
-                <a href="#"><img src="images/ad1.jpg" alt=""></a>
-            </div>
-            <div class="adv-img">
-                <a href="#"><img src="images/ad2.jpg" alt=""></a>
-            </div>
-            <div class="adv-img">
-                <a href="#"><img src="images/ad3.jpg" alt=""></a>
-            </div>
-        </div>
-    </div>
 
-    <div class="container">
-        <div class="center">
-            <div class="star-goods">
-                <h2 class="title">商品购物</h2>
-                <div class="goods-container">
-                    <div class="goods-item">
-                        <div class="goods-add-cart">加入购物车</div>
-                        <a href="#">
-                            <img src="images/g1.jpg" alt="">
-                            <p>蔡老师的爸爸</p>
-                        </a>
-                        <p class="text1">菜</p>
-                        <p class="jiage1">299元</p>
-                    </div>
-                    <div class="goods-item">
-                        <div class="goods-add-cart">加入购物车</div>
-                        <a href="#">
-                            <img src="images/g1.jpg" alt="">
-                            <p>蔡老师的爸爸</p>
-                        </a>
-                        <p class="text1">菜</p>
-                        <p class="jiage1">299元</p>
-                    </div>
-                    <div class="goods-item">
-                        <div class="goods-add-cart">加入购物车</div>
-                        <a href="#">
-                            <img src="images/g1.jpg" alt="">
-                            <p>蔡老师的爸爸</p>
-                        </a>
-                        <p class="text1">菜</p>
-                        <p class="jiage1">299元</p>
-                    </div>
-                    <div class="goods-item">
-                        <div class="goods-add-cart">加入购物车</div>
-                        <a href="#">
-                            <img src="images/g1.jpg" alt="">
-                            <p>蔡老师的爸爸</p>
-                        </a>
-                        <p class="text1">菜</p>
-                        <p class="jiage1">299元</p>
-                    </div>
-                    <div class="goods-item">
-                        <div class="goods-add-cart">加入购物车</div>
-                        <a href="#">
-                            <img src="images/g1.jpg" alt="">
-                            <p>蔡老师的爸爸</p>
-                        </a>
-                        <p class="text1">菜</p>
-                        <p class="jiage1">299元</p>
-                    </div>
-                    <div class="goods-item">
-                        <div class="goods-add-cart">加入购物车</div>
-                        <a href="#">
-                            <img src="images/g1.jpg" alt="">
-                            <p>蔡老师的爸爸</p>
-                        </a>
-                        <p class="text1">菜</p>
-                        <p class="jiage1">299元</p>
-                    </div>
-                    <div class="goods-item">
-                        <div class="goods-add-cart">加入购物车</div>
-                        <a href="#">
-                            <img src="images/g1.jpg" alt="">
-                            <p>蔡老师的爸爸</p>
-                        </a>
-                        <p class="text1">菜</p>
-                        <p class="jiage1">299元</p>
-                    </div>
-                    <div class="goods-item">
-                        <div class="goods-add-cart">加入购物车</div>
-                        <a href="#">
-                            <img src="images/g1.jpg" alt="">
-                            <p>蔡老师的爸爸</p>
-                        </a>
-                        <p class="text1">菜</p>
-                        <p class="jiage1">299元</p>
-                    </div>
-                    <div class="goods-item">
-                        <div class="goods-add-cart">加入购物车</div>
-                        <a href="#">
-                            <img src="images/g1.jpg" alt="">
-                            <p>蔡老师的爸爸</p>
-                        </a>
-                        <p class="text1">菜</p>
-                        <p class="jiage1">299元</p>
-                    </div>
-                </div>
-            </div>
-            <div class="jiadian">
-                <h2 class="title">家电</h2>
-                <div class="home-box">
-                    <div class="home-box-left">
-                        <a href="#">
-                            <img src="images/jiadian1.jpg" alt=""></a>
-                    </div>
-                    <div class="home-box-right">
-                        <ul>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items2">
-                                <a href="#">
-                                    <img src="images/jiadian5.jpg" alt="">
-
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="jiadian">
-                <h2 class="title">智能</h2>
-                <div class="home-box">
-
-                    <div class="home-box-left2">
-                        <li class="items">
-                            <a href="#">
-                                <img src="images/zhineng1.jpg" alt="">
-
-                            </a>
-                        </li>
-                        <li class="items">
-                            <a href="#">
-                                <img src="images/zhineng2.jpg" alt="">
-
-                            </a>
-                        </li>
-                    </div>
-                    <div class="home-box-right">
-                        <ul>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items2">
-                                <a href="#">
-                                    <img src="images/jiadian5.jpg" alt="">
-
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="jiadian">
-                <h2 class="title">搭配</h2>
-                <div class="home-box">
-
-                    <div class="home-box-left2">
-                        <li class="items">
-                            <a href="#">
-                                <img src="images/zhineng1.jpg" alt="">
-
-                            </a>
-                        </li>
-                        <li class="items">
-                            <a href="#">
-                                <img src="images/zhineng2.jpg" alt="">
-
-                            </a>
-                        </li>
-                    </div>
-                    <div class="home-box-right">
-                        <ul>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items2">
-                                <a href="#">
-                                    <img src="images/jiadian5.jpg" alt="">
-
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="jiadian">
-                <h2 class="title">配件</h2>
-                <div class="home-box">
-
-                    <div class="home-box-left2">
-                        <li class="items">
-                            <a href="#">
-                                <img src="images/zhineng1.jpg" alt="">
-
-                            </a>
-                        </li>
-                        <li class="items">
-                            <a href="#">
-                                <img src="images/zhineng2.jpg" alt="">
-
-                            </a>
-                        </li>
-                    </div>
-                    <div class="home-box-right">
-                        <ul>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items2">
-                                <a href="#">
-                                    <img src="images/jiadian5.jpg" alt="">
-
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="jiadian">
-                <h2 class="title">周边</h2>
-                <div class="home-box">
-
-                    <div class="home-box-left2">
-                        <li class="items">
-                            <a href="#">
-                                <img src="images/zhineng1.jpg" alt="">
-
-                            </a>
-                        </li>
-                        <li class="items">
-                            <a href="#">
-                                <img src="images/zhineng2.jpg" alt="">
-
-                            </a>
-                        </li>
-                    </div>
-                    <div class="home-box-right">
-                        <ul>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="#">
-                                    <img src="images/jiadian2.jpg" alt="">
-                                    <p class="name2">小米电视4A 43英寸</p>
-                                    <p class="name3">2GB+8GB大存储，内置海量大片</p>
-                                    <p class="name4">2099元</p>
-                                </a>
-                            </li>
-                            <li class="items2">
-                                <a href="#">
-                                    <img src="images/jiadian5.jpg" alt="">
-
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="neirong">
-                <h2 class="title">内容</h2>
-                <div class="nierong-box">
-                    <div class="nierong-box-left">
-                        <div class="n1">图书</div>
-                        <div class="n2">哈利·波特与被诅咒的孩子</div>
-                        <div class="n3">"哈利·波特"第八个故事中文版震撼来袭！特别彩排版剧本！</div>
-                        <div class="n4">23.37元</div>
-                        <div class="n5">
-                            <a href="#">
-                                <img src="images/neirong1.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nierong-box-right">
-                        <div class="n1">图书</div>
-                        <div class="n2">哈利·波特与被诅咒的孩子</div>
-                        <div class="n3">"哈利·波特"第八个故事中文版震撼来袭！特别彩排版剧本！</div>
-                        <div class="n4">23.37元</div>
-                        <div class="n5">
-                            <a href="#">
-                                <img src="images/neirong1.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nierong-box-right">
-                        <div class="n1">图书</div>
-                        <div class="n2">哈利·波特与被诅咒的孩子</div>
-                        <div class="n3">"哈利·波特"第八个故事中文版震撼来袭！特别彩排版剧本！</div>
-                        <div class="n4">23.37元</div>
-                        <div class="n5">
-                            <a href="#">
-                                <img src="images/neirong1.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nierong-box-right">
-                        <div class="n1">图书</div>
-                        <div class="n2">哈利·波特与被诅咒的孩子</div>
-                        <div class="n3">"哈利·波特"第八个故事中文版震撼来袭！特别彩排版剧本！</div>
-                        <div class="n4">23.37元</div>
-                        <div class="n5">
-                            <a href="#">
-                                <img src="images/neirong1.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="video">
-                <h2 class="title">视频</h2>
-                <div class="video-box">
-                    <ul>
-                        <li class="video-items">
-                            <a herf="#">
-                                <div class="video-img">
-                                    <img src="images/m1.jpg" alt="">
-                                    <div class="play">
-                                        <i class="iconfont">&#xe63a;</i>
-                                    </div>
-                                </div>
-                                <p class="n6">听雷总讲述小米7年工艺探索之路</p>
-                                <p class="n7">小米6,7年工艺探索的巅峰之作</p>
-                            </a>
-                        </li>
-                        <li class="video-items">
-                            <a herf="#">
-                                <div class="video-img">
-                                    <img src="images/m1.jpg" alt="">
-                                    <div class="play">
-                                        <i class="iconfont">&#xe63a;</i>
-                                    </div>
-                                </div>
-                                <p class="n6">听雷总讲述小米7年工艺探索之路</p>
-                                <p class="n7">小米6,7年工艺探索的巅峰之作</p>
-                            </a>
-                        </li>
-                        <li class="video-items">
-                            <a herf="#">
-                                <div class="video-img">
-                                    <img src="images/m1.jpg" alt="">
-                                    <div class="play">
-                                        <i class="iconfont">&#xe63a;</i>
-                                    </div>
-                                </div>
-                                <p class="n6">听雷总讲述小米7年工艺探索之路</p>
-                                <p class="n7">小米6,7年工艺探索的巅峰之作</p>
-                            </a>
-                        </li>
-                        <li class="video-items">
-                            <a herf="#">
-                                <div class="video-img">
-                                    <img src="images/m1.jpg" alt="">
-                                    <div class="play">
-                                        <i class="iconfont">&#xe63a;</i>
-                                    </div>
-                                </div>
-                                <p class="n6">听雷总讲述小米7年工艺探索之路</p>
-                                <p class="n7">小米6,7年工艺探索的巅峰之作</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
+    <!-- 内容 -->
+    <!-- 底部 -->
     <div class="footer">
         <div class="site-footer">
             <div class="center">
@@ -1319,14 +1359,10 @@
         </div>
 
     </div>
+    <!-- 底部 -->
 
-    </ul>
-
-    </div>
-
+    <script src="js/index.js"></script>
 
 
 
 </body>
-
-</html>
