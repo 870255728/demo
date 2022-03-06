@@ -18,7 +18,7 @@ function showlist() {
     }
 }
 $("#btn-denglu").click(function () {
-    alert("就是不登录，诶，就是玩儿")
+    alert("登陆成功")
 })
 let eye = document.getElementById('eye');
 let pwd = document.getElementById('pwd');
