@@ -69,6 +69,20 @@
       "unicode_decimal": 58954
     },
     {
+      "icon_id": "5388069",
+      "name": "眼睛_显示_o",
+      "font_class": "yanjing_xianshi_o",
+      "unicode": "ebcc",
+      "unicode_decimal": 60364
+    },
+    {
+      "icon_id": "5388071",
+      "name": "眼睛_隐藏_o",
+      "font_class": "yanjing_yincang_o",
+      "unicode": "ebcd",
+      "unicode_decimal": 60365
+    },
+    {
       "icon_id": "5913038",
       "name": "礼物礼品",
       "font_class": "liwulipin",
@@ -118,11 +132,25 @@
       "unicode_decimal": 58884
     },
     {
+      "icon_id": "10746185",
+      "name": "圆点",
+      "font_class": "yuandian",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
       "icon_id": "15747480",
       "name": "左右键",
       "font_class": "zuoyoujiancopy1",
       "unicode": "e50a",
       "unicode_decimal": 58634
+    },
+    {
+      "icon_id": "19954267",
+      "name": "未选中圆点",
+      "font_class": "weixuanzhongyuandian",
+      "unicode": "e629",
+      "unicode_decimal": 58921
     },
     {
       "icon_id": "25468355",

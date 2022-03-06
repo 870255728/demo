@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+}
+ul,ol,li{
+    list-style: none;
+    list-style-type:none;
+}
+img,input{
+    border: none;
+    vertical-align: middle;
+}
+input{
+    border: none;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}

@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="123.css">
     <script src="js/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/ajax.js"></script>
 </head>
 <style></style>
 
 <body>
 
     <div class="top-bar">
+
         <div class="center">
             <ul class="top-left-font">
                 <a href="#">小米商城</a> <span>|</span>
@@ -35,8 +37,16 @@
                 <a href="#">注册</a>
                 <a href="#">
                     <li class="gouwuche">
-                        <i class="iconfont">&#xe61b;</i>购物车（0）
-                        <div class="gouwuche-list">购物车中还没有商品，赶紧选购吧！</div>
+                        <i class="iconfont">&#xe61b;</i>购物车（ <i id="ccount">0</i> ）
+                        <div class="gouwuche-list" id="gouwucheList">
+                            <div class="tupian1" id="tupian1"><img src="images/cai.jpg" alt=""></div>
+                        </div>
+                        <!-- <div class="gouwuche-list">
+                            <div class="tupian1" id="tupian2"><img src="images/cai.jpg" alt=""></div>
+                        </div>
+                        <div class="gouwuche-list">
+                            <div class="tupian1" id="tupian3"><img src="images/cai.jpg" alt=""></div>
+                        </div> -->
                     </li>
                 </a>
             </ul>
@@ -511,6 +521,7 @@
     <!-- 头部 -->
     <!-- 内容 -->
     <div id="lists" class="container">
+
         <ol class="active">
             <div class="hengfu">
                 <div class="center">
@@ -519,6 +530,7 @@
                             <ul>
                                 <li><a herf="#">手机 电话卡<i>></i></a>
                                     <div class="hengfu-right-list">
+
                                         <ul>
                                             <li><a href="#">
                                                     <img src="images/h1.jpg" alt="">
@@ -584,22 +596,34 @@
                 </div>
             </div>
             <div class="center">
-                <div class="star-goods">
+                <div class="list">
                     <h2 class="title">商品购物</h2>
                     <div class="goods-container">
                         <div class="goods-item">
-                            <a href="#" class="goods-add-cart">加入购物车</a>
+                            <a href="#" class="goods-add-cart" id="JfJh0GtTj">加入购物车</a>
                             <a href="#">
-                                <img src="images/g1.jpg" alt="">
+                                <img src="https://img.alicdn.com/imgextra/i2/1816480045/O1CN01d12UnR1CCeWegRCoR_!!0-saturn_solar.jpg_468x468q75.jpg_.webp"
+                                    alt="">
                                 <p>蔡老师的爸爸</p>
                             </a>
                             <p class="text1">菜</p>
                             <p class="jiage1">299元</p>
                         </div>
-                        <div class="goods-item">
+                        <div class="goods-item" id="A1">
                             <a href="#" class="goods-add-cart">加入购物车</a>
                             <a href="#">
-                                <img src="images/g1.jpg" alt="">
+                                <img src="https://img.alicdn.com/imgextra/i1/441920070/O1CN01l6r6cW1CO6RDKfYVC_!!0-saturn_solar.jpg_468x468q75.jpg_.webp"
+                                    alt="">
+                                <p>蔡老师的爸爸</p>
+                            </a>
+                            <p class="text1">菜</p>
+                            <p class="jiage1">299元</p>
+                        </div>
+                        <div class="goods-item" id="A10">
+                            <a href="#" class="goods-add-cart">加入购物车</a>
+                            <a href="#">
+                                <img src="https://img.alicdn.com/imgextra/i1/35645544/O1CN01vfvHCH1qpCUYqrWSh_!!0-saturn_solar.jpg_468x468q75.jpg_.webp"
+                                    alt="">
                                 <p>蔡老师的爸爸</p>
                             </a>
                             <p class="text1">菜</p>
@@ -1146,14 +1170,17 @@
                             <label class="el-form-item__label">用户名</label>
                             <input type="text">
                         </div>
-                        <div class="denglu-item">
+                        <div class="denglu-item eye-c-box ">
                             <label class="el-form-item__label">密码</label>
-                            <input type="text">
+                            <div class="eye-c " id="eye">
+                                <i class="iconfont" id="eyei">&#xebcd;</i>
+                            </div>
+                            <input type="password" id="pwd">
                         </div>
                         <div class="check">
                             <input type="checkbox"><span>管理员登陆</span>
                         </div>
-                        <div class="anniu">
+                        <div class="anniu" id="btn-denglu">
                             <button type="submit" class="bt1 bt2">
                                 <span>登陆</span>
                             </button>
@@ -1174,11 +1201,14 @@
                         <h2>注册</h2>
                         <div class="denglu-item">
                             <label class="el-form-item__label">用户名</label>
-                            <input type="text">
+                            <input type="text" id="rigisterName">
                         </div>
-                        <div class="denglu-item">
+                        <div class="denglu-item eye-c-box ">
                             <label class="el-form-item__label">密码</label>
-                            <input type="text">
+                            <div class="eye-c " id="eye2">
+                                <i class="iconfont" id="eyei2">&#xebcd;</i>
+                            </div>
+                            <input type="password" id="pwd2">
                         </div>
                         <div class="denglu-item">
                             <label class="el-form-item__label">昵称</label>
@@ -1195,38 +1225,22 @@
             </div>
         </ol>
         <!-- 注册 -->
-        <!-- 购物车-假 -->
+        <!-- 购物车-->
         <ol>
-            <div class="denglu">
+            <div class="gouwuche-box">
                 <div class="center">
-                    <div class="denglu-body">
-                        <div class="fly">
-                            <i class="iconfont">&#xe631;</i>
-                        </div>
-                        <h2>注册</h2>
-                        <div class="denglu-item">
-                            <label class="el-form-item__label">用户名</label>
-                            <input type="text">
-                        </div>
-                        <div class="denglu-item">
-                            <label class="el-form-item__label">密码</label>
-                            <input type="text">
-                        </div>
-                        <div class="denglu-item">
-                            <label class="el-form-item__label">昵称</label>
-                            <input type="text">
-                        </div>
-                        <br>
-                        <div class="anniu">
-                            <button type="submit" class="bt1 bt2">
-                                <span>注册</span>
-                            </button>
-                        </div>
+                    <div class="gouwuche-bar">
+                        <div class="gb1">商品名称</div>
+                        <div class="gb2">颜色</div>
+                        <div class="gb4">单价</div>
+                        <div class="gb5">行总价</div>
+                        <div class="gb6">数量</div>
+                        <div class="gb7">删除/购买</div>
                     </div>
                 </div>
             </div>
         </ol>
-        <!-- 购物车-假 -->
+        <!-- 购物车-->
     </div>
 
     <!-- 内容 -->
@@ -1361,7 +1375,13 @@
     </div>
     <!-- 底部 -->
 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- <script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script> -->
+
+    <script src="js/ajax.js"></script>
     <script src="js/index.js"></script>
+
 
 
 

@@ -1,0 +1,18 @@
+.focus{
+    width: 632px;
+    height: 340px;
+    position: relative;
+}
+.focus ul li{
+    float: left;
+    z-index: 5;
+}
+.focus ul{
+    width: 300%;
+}
+lb{
+    position: absolute;
+    /* float: left; */
+    top: 0px;
+    z-index: 10;
+}

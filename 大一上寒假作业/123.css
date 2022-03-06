@@ -1059,4 +1059,65 @@ margin: 25px 70px;
     margin-bottom: 5px;
     margin-top: 5px;
 }
+.gouwuche-box{
+    background-color: white;
+    height: 150px;
+}
+.gouwuche-bar{
+    border-bottom: solid 2px #ebeef5;
+    width: 1160px;
+    padding-top: 50px;
+    height: 48px;
+}
+.gouwuche-bar div{
+    float: left;
+    color: #909399;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+}
+.gb1{
+    width: 300px;
+}
+.gb2{
+    width: 120px;
+}
+.gb4{
+    width: 180px;
+}
+.gb5{
+    width: 180px;
+}
+.gb6{
+    width: 180px;
+}
+.gb7{
+    width: 200px;
+}
+.eye-c-box{
+    position: relative;
+
+}
+.eye-c{
+    position: absolute;
+    top: 40px;
+    left: 290px;
+    cursor:pointer;
+    display: none;
+}
+.eye-c-box:hover>.eye-c{
+    display: block;
+}
+.tupian1{
+
+    float: left;
+    width: 310px;
+    height: 50px;
+    display: none;
+}
+.tupian1 img{
+    height: 100%;
+    width: 100%;
+}
 
